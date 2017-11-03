@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import OfficeUIFabricVue from 'office-ui-fabric-vue'
+import 'office-ui-fabric-vue/dist/index.css'
 
 Vue.config.productionTip = false
+Vue.use(OfficeUIFabricVue);
 
 /* eslint-disable no-new */
 new Vue({
