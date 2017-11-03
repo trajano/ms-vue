@@ -1,7 +1,7 @@
 <template>
   <div class="login">
-    <ou-text-field v-model='text' label='Username' />
-    <ou-text-field v-model='password' label='Password' />
+    <ou-text-field v-model='text' type='placeholder' label='Username' />
+    <ou-password-field v-model='text' type='placeholder' label='Password' />
   </div>
 </template>
 
