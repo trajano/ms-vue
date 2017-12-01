@@ -38,7 +38,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next:Function) => {
-  if (sessionStorage.getItem("access_token") == null && !to.meta.permit_all) {
+  if (!sessionStorage.getItem("access_token") && !to.meta.permit_all) {
     sessionStorage.setItem("requested_uri", to.fullPath)
     next("/login")
   } else {
